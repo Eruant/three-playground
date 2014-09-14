@@ -1,0 +1,17 @@
+{
+  "name": "learning-three",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Matt Gale",
+  "license": "MIT",
+  "devDependencies": {
+    "browserify": "^5.11.2",
+    "gulp": "^3.8.8",
+    "gulp-jade": "^0.8.0",
+    "vinyl-source-stream": "^1.0.0"
+  }
+}
