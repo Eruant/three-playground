@@ -5,7 +5,7 @@ var gulp = require('gulp'),
 
 gulp.task('default', ['watch']);
 
-gulp.task('compile', ['js', 'markup']);
+gulp.task('compile', ['js', 'markup', 'meshes']);
 
 gulp.task('js', function () {
 
@@ -14,6 +14,13 @@ gulp.task('js', function () {
   bundleStream
     .pipe(source('bundle.js'))
     .pipe(gulp.dest('dest/www/js'));
+});
+
+gulp.task('meshes', function () {
+
+  gulp.src('./src/meshes/*.js')
+    .pipe(gulp.dest('dest/www/meshes'));
+
 });
 
 gulp.task('markup', function () {
